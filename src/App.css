@@ -1,38 +1,84 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
 .App {
+  height: 100vh;
+  display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: rgb(9, 23, 49);
+  font-family: helvetica, sans-serif;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardWeather {
+  width: 275px;
+  height: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: rgb(65, 112, 200);
+  border-radius: 35px;
+  box-sizing: border-box;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  padding: 20px 0px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.currentWeather {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.temp {
+  color: aliceblue;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.name {
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight:400;
+}
+
+.other-info {
+  color: rgb(9, 23, 49);
+  font-size: 1rem;
+}
+
+.temperature{
+  padding-bottom: 20px;
+}
+
+.fa-temperature-full {
+  font-size: 2rem;
+}
+
+.button {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(19, 47, 102);
+  border: none;
+  color: rgb(65, 112, 200);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: .6rem;
+  font-weight: bold;
+  margin: 2px 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(118, 143, 194);
+  color: rgb(9, 23, 49);
 }
